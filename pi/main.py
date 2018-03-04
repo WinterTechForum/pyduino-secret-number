@@ -5,7 +5,7 @@ from secret_number_pb2 import SecretNumber
 from flask import Flask, request
 
 # Create a serial connection, which is retained while the server is live
-ser = serial.Serial('/dev/cu.usbserial-AM01XX8R', 9600, timeout=1)
+ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 
 app = Flask(__name__)
 
